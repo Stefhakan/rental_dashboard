@@ -1,5 +1,4 @@
-from pydantic import BaseModel
-from models import Scores, Distances, Property, PropertyListResponse
+from models import Distances, Property
 
 
 prop_results= [
@@ -17,13 +16,8 @@ prop_results= [
         listing_url= None,
         latitude= 34.094507,
         longitude= -118.123951,
-        overall= 82,
-        scores= Scores(
-            commute= 62,
-            price= 93,
-            neighborhood= 74,
-            amenities= 84,
-        ),
+        neighborhood_score= 74,
+        amenities_score= 84,
         distances= Distances(
             work_minutes= 45,
             grocery_miles= 3,
@@ -44,13 +38,8 @@ prop_results= [
         listing_url= None,
         latitude= 34.094507,
         longitude= -118.123951,
-        overall= 88,
-        scores= Scores(
-            commute= 85,
-            price= 66,
-            neighborhood= 87,
-            amenities= 79,
-        ),
+        neighborhood_score= 87,
+        amenities_score= 79,
         distances= Distances(
             work_minutes= 45,
             grocery_miles= 3,
@@ -71,13 +60,8 @@ prop_results= [
         listing_url= None,
         latitude= 34.094507,
         longitude= -118.123951,
-        overall= 96,
-        scores= Scores(
-            commute= 95,
-            price= 76,
-            neighborhood= 97,
-            amenities= 89,
-        ),
+        neighborhood_score= 97,
+        amenities_score= 89,
         distances= Distances(
             work_minutes= 5,
             grocery_miles= 3,
